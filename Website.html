@@ -28,18 +28,30 @@
             max-width: 1000px;
             margin: 0 auto;
         }
-        .gallery img {
+        .gallery-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .gallery-item img {
             width: 100%;
             height: auto;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
-        .gallery img:hover {
+        .gallery-item img:hover {
             transform: scale(1.05);
         }
-        .gallery a {
+        .gallery-item a {
             text-decoration: none;
+        }
+        .description {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #666;
+            width: 100%;
+            text-align: center;
         }
     </style>
 </head>
@@ -47,40 +59,70 @@
 <body>
     <h1>Welcome to the AR Quick Preview Library</h1>
     <p>
-        We have created this website to showcase AR objects that can be viewed on any device running iOS 12.0 or higher. This simple gallery is built with HTML and CSS to make it easy to explore different AR objects.
+        I created this website to showcase AR objects that can be viewed on any device running iOS 12.0 or higher. This simple gallery is built with HTML and CSS to make it easy to explore different AR objects.
     </p>
 
     <div class="gallery">
-        <a href="egg.usdz" rel="ar">
-            <img src="egg.png" alt="Egg AR Object">
-        </a>
-        <a href="cupandsaucer.usdz" rel="ar">
-            <img src="cupandsaucer.png" alt="Cup and Saucer AR Object">
-        </a>
-        <a href="CosmonautSuit_en.reality" rel="ar">
-            <img src="CosmonautSuit_en.png" alt="Cosmonaut Suit AR Object">
-        </a>
-        <a href="gramophone.usdz" rel="ar">
-            <img src="gramophone.png" alt="Gramophone AR Object">
-        </a>
-        <a href="plantpot.usdz" rel="ar">
-            <img src="plantpot.png" alt="Plant Pot AR Object">
-        </a>
-        <a href="redchair.usdz" rel="ar">
-            <img src="redchair.png" alt="Red Chair AR Object">
-        </a>
-        <a href="teapot.usdz" rel="ar">
-            <img src="teapot.png" alt="Teapot AR Object">
-        </a>
-        <a href="SDCube.usdz" rel="ar">
-            <img src="SDCube.png" alt="SD Cube AR Object">
-        </a>
-        <a href="tulip.usdz" rel="ar">
-            <img src="tulip.png" alt="Tulip AR Object">
-        </a>
-        <a href="wateringcan.usdz" rel="ar">
-            <img src="wateringcan.png" alt="Watering Can AR Object">
-        </a>
+        <div class="gallery-item">
+            <a href="egg.usdz" rel="ar">
+                <img src="egg.png" alt="Egg AR Object">
+            </a>
+            <div class="description">Egg Object</div>
+        </div>
+        <div class="gallery-item">
+            <a href="cupandsaucer.usdz" rel="ar">
+                <img src="cupandsaucer.png" alt="Cup and Saucer AR Object">
+            </a>
+            <div class="description">Cup and Saucer</div>
+        </div>
+        <div class="gallery-item">
+            <a href="CosmonautSuit_en.reality" rel="ar">
+                <img src="CosmonautSuit_en.png" alt="Cosmonaut Suit AR Object">
+            </a>
+            <div class="description">Cosmonaut Suit</div>
+        </div>
+        <div class="gallery-item">
+            <a href="gramophone.usdz" rel="ar">
+                <img src="gramophone.png" alt="Gramophone AR Object">
+            </a>
+            <div class="description">Gramophone</div>
+        </div>
+        <div class="gallery-item">
+            <a href="plantpot.usdz" rel="ar">
+                <img src="plantpot.png" alt="Plant Pot AR Object">
+            </a>
+            <div class="description">Plant Pot</div>
+        </div>
+        <div class="gallery-item">
+            <a href="redchair.usdz" rel="ar">
+                <img src="redchair.png" alt="Red Chair AR Object">
+            </a>
+            <div class="description">Red Chair</div>
+        </div>
+        <div class="gallery-item">
+            <a href="teapot.usdz" rel="ar">
+                <img src="teapot.png" alt="Teapot AR Object">
+            </a>
+            <div class="description">Teapot</div>
+        </div>
+        <div class="gallery-item">
+            <a href="SDCube.usdz" rel="ar">
+                <img src="SDCube.png" alt="SD Cube AR Object">
+            </a>
+            <div class="description">SD Cube</div>
+        </div>
+        <div class="gallery-item">
+            <a href="tulip.usdz" rel="ar">
+                <img src="tulip.png" alt="Tulip AR Object">
+            </a>
+            <div class="description">Tulip</div>
+        </div>
+        <div class="gallery-item">
+            <a href="wateringcan.usdz" rel="ar">
+                <img src="wateringcan.png" alt="Watering Can AR Object">
+            </a>
+            <div class="description">Watering Can</div>
+        </div>
     </div>
 </body>
 </html>

@@ -1,42 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Sam's AR Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam's AR Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .gallery a {
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
-	<h1>Welcome to the AR Quick Preview Library</h1>
-	<p>I created this website in order to view AR objects from the web on any device running iOS 12.0 Conincidentally, this is a very simple website made with HTML.</p>
-	<a href="egg.usdz" rel="ar">
-		<img src="egg.png" width=200>
-	</a>
-	<a href="cupandsaucer.usdz" rel="ar">
-		<img src="cupandsaucer.png" width=200>
-	</a>
-	<a href="CosmonautSuit_en.reality" rel="ar">
-		<img src="CosmonautSuit_en.png" width=200>
-	</a>
-	
-	<a href="gramophone.usdz" rel="ar">
-		<img src="gramophone.png" width=200>
-	</a>
-	<a href="plantpot.usdz" rel="ar">
-		<img src="plantpot.png" width=200>
-	</a>
-	<a href="redchair.usdz" rel="ar">
-		<img src="redchair.png" width=200>
-	</a>
-	<a href="teapot.usdz" rel="ar">
-		<img src="teapot.png" width=200>
-	</a>
-	
-	<a href="SDCube.usdz" rel="ar">
-		<img src="SDCube" width=200>
-	</a>
-	<a href="tulip.usdz" rel="ar">
-		<img src="tulip.png" width=200>
-	</a><a href="wateringcan.usdz" rel="ar">
-		<img src="wateringcan.png" width=200>
-	</a>
+    <h1>Welcome to the AR Quick Preview Library</h1>
+    <p>
+        I created this website to showcase AR objects that can be viewed on any device running iOS 12.0 or higher. This simple gallery is built with HTML and CSS to make it easy to explore different AR objects.
+    </p>
+
+    <div class="gallery">
+        <a href="egg.usdz" rel="ar">
+            <img src="egg.png" alt="Egg AR Object">
+        </a>
+        <a href="cupandsaucer.usdz" rel="ar">
+            <img src="cupandsaucer.png" alt="Cup and Saucer AR Object">
+        </a>
+        <a href="CosmonautSuit_en.reality" rel="ar">
+            <img src="CosmonautSuit_en.png" alt="Cosmonaut Suit AR Object">
+        </a>
+        <a href="gramophone.usdz" rel="ar">
+            <img src="gramophone.png" alt="Gramophone AR Object">
+        </a>
+        <a href="plantpot.usdz" rel="ar">
+            <img src="plantpot.png" alt="Plant Pot AR Object">
+        </a>
+        <a href="redchair.usdz" rel="ar">
+            <img src="redchair.png" alt="Red Chair AR Object">
+        </a>
+        <a href="teapot.usdz" rel="ar">
+            <img src="teapot.png" alt="Teapot AR Object">
+        </a>
+        <a href="SDCube.usdz" rel="ar">
+            <img src="SDCube.png" alt="SD Cube AR Object">
+        </a>
+        <a href="tulip.usdz" rel="ar">
+            <img src="tulip.png" alt="Tulip AR Object">
+        </a>
+        <a href="wateringcan.usdz" rel="ar">
+            <img src="wateringcan.png" alt="Watering Can AR Object">
+        </a>
+    </div>
 </body>
 </html>

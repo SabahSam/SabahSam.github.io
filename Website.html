@@ -1,28 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sam's AR Gallery</title>
+    <title>fuels 3D Assets Katalog</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #ffffff;
+            font-family: 'Arial', sans-serif; /* Match website font */
+            background-color: #3d00ff; /* Set background to match website */
             margin: 0;
             padding: 20px;
-            color: #333;
+            color: #c5ff2e; /* Bright green text */
         }
+
         h1 {
-            color: #00447c;
+            color: #c5ff2e; /* Match heading color to website text */
             font-weight: 400;
+            text-align: center;
         }
+
         p {
             font-size: 18px;
-            color: #666;
+            color: #ffffff; /* White text for paragraphs */
             max-width: 800px;
             margin: 0 auto 40px;
             line-height: 1.6;
+            text-align: center;
         }
+
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -30,11 +35,13 @@
             max-width: 1000px;
             margin: 0 auto;
         }
+
         .gallery-item {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
+
         .gallery-item img {
             width: 100%;
             height: auto;
@@ -42,26 +49,48 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
+
         .gallery-item img:hover {
             transform: scale(1.05);
         }
+
         .description {
             margin-top: 10px;
             font-size: 16px;
-            color: #444;
+            color: #ffffff; /* White description text */
             width: 100%;
             text-align: center;
         }
+
         a {
-            color: #00447c;
+            color: #c5ff2e; /* Link color matching the neon green */
             text-decoration: none;
             transition: color 0.3s ease;
         }
+
         a:hover {
-            color: #0073e6;
+            color: #ffffff; /* Hover effect turns links white */
+        }
+
+        /* Button style similar to your contact button */
+        .btn {
+            background-color: transparent;
+            border: 2px solid #c5ff2e;
+            padding: 10px 20px;
+            color: #c5ff2e;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #c5ff2e;
+            color: #3d00ff;
         }
     </style>
 </head>
+
 
 <body>
     <h1>fuels – Future Learning Spaces</h1>

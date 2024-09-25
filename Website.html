@@ -6,20 +6,22 @@
     <title>Sam's AR Gallery</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff;
             margin: 0;
             padding: 20px;
-            text-align: center;
+            color: #333;
         }
         h1 {
-            color: #333;
+            color: #00447c;
+            font-weight: 400;
         }
         p {
             font-size: 18px;
-            color: #555;
+            color: #666;
             max-width: 800px;
             margin: 0 auto 40px;
+            line-height: 1.6;
         }
         .gallery {
             display: grid;
@@ -36,22 +38,27 @@
         .gallery-item img {
             width: 100%;
             height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
         .gallery-item img:hover {
             transform: scale(1.05);
         }
-        .gallery-item a {
-            text-decoration: none;
-        }
         .description {
             margin-top: 10px;
             font-size: 16px;
-            color: #666;
+            color: #444;
             width: 100%;
             text-align: center;
+        }
+        a {
+            color: #00447c;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #0073e6;
         }
     </style>
 </head>
